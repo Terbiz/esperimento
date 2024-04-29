@@ -19,10 +19,11 @@
     <!--Condizioni-->
     <style>
         @media only screen and (max-width: 1853px) { .testo {font-size: 1em;}}      /*prima dimensione testo*/
-        @media only screen and (max-width: 1000px) { .testo {font-size: 13px;}}      /*seconda dimensione testo*/
+        @media only screen and (max-width: 1000px) { .testo {font-size: 13px;}}     /*seconda dimensione testo*/
         @media only screen and (max-width: 880px) { .testo {font-size: 10px;}}      /*seconda dimensione testo*/
-        @media only screen and (max-width: 770px) { .testo {font-size: 8px;}}      /*seconda dimensione testo*/
-        @media only screen and (max-width: 550px) { .testo {font-size: 5.7px;}}      /*seconda dimensione testo*/
+        @media only screen and (max-width: 770px) { .testo {font-size: 8px;}}       /*seconda dimensione testo*/
+        @media only screen and (max-width: 550px) { .testo {font-size: 5.7px; align-items: ;}}     /*seconda dimensione testo*/
+        @media only screen and (max-height: 1853px) and (min-width: 1000px) {.immagine {display: none;}}
 
         /*slide foto*/
         * {box-sizing: border-box;}
@@ -184,8 +185,13 @@
       setTimeout(showSlides, 5000); // Change image every 2 seconds
     }
     </script>
-    
+    </div>  
 
+    <!--Immagine dal telefono-->
+
+    <div class="immagine" style="height: 100%; padding-top: 4%;">
+      <img src="immagini/contadino.png" alt="contadino fine pagina" style="width: 100%;  border: 4px rgb(9, 46, 0) solid; border-radius: 500px;">
+    </div>
     
 
 
