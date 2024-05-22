@@ -1,0 +1,61 @@
+/*===============================================NAVBAR===============================================================*/
+.navbar{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  height: 5em;
+  border-bottom: 10px solid;
+  border-left: 7px solid;
+  border-radius: 10px;
+  border-color: silver;
+  justify-content: space-between; 
+  
+}
+
+div h1 {
+color: #595959;
+}
+
+div img{
+height: 100%;
+}
+
+/*===============================================RESEARCHBAR===============================================================*/
+.ricerca{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+align-content: center;
+padding-top: 2%;
+}
+
+
+/*===============================================TASTI===============================================================*/
+.tasto:hover{ /* questa e la condizione di questo css: se coperto con il cursore*/
+  border: 5px solid #ff9900; /* Definisci la bordatura con lo spessore e il colore */
+  background-color: rgb(53, 88, 42); /* Colore di sfondo quando si passa sopra */
+  }
+
+.tasti{
+  padding: 3% 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center
+  
+}
+
+.tasto {
+  color: white;
+  background-color: rgb(114, 226, 1);
+  border: 2px solid rgb(255, 227, 195);
+  border-top: solid rgb(255, 255, 255);
+  border-left: solid rgb(255, 255, 255);
+  border-radius: 10px;
+  font-size: clamp(19px, 1.1vw, 40px);       /* (MIN_FONT_SIZE, CURRENT_FONT_SIZE, MAX_FONT_SIZE) */
+  text-align: center;
+  
+  margin: 1%;
+  flex-grow: 0.2;            /*mettere dimensione casella */
+  flex-basis: 100px;
+}

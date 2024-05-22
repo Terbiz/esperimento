@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lorto di Fede</title>
+
+    <!--Link per altri file: Css/Img-->
+    <link rel="shortcut icon" href="immagini/lortodifede4-removebg-preview.png" >
+    <link rel="stylesheet" href="storia.css">
+    <link rel="stylesheet" href="Home.html">
+    <link rel="stylesheet" href="prodotti.html">
+    <link rel="stylesheet" href="social.html">
+    <link rel="stylesheet" href="info.html">
+
+    
+    <!--Link per font scritta-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body style="background-color: #247a07ff;">
+    
+
+    <!--Topbar-->
+        <!--Css-->
+    <style>
+        @media only screen and (min-width: 666px) {.max {max-height: 79px;  justify-content: flex-end;}}
+        @media only screen and (max-width: 666px) {.max {max-height: 160px; width: 112%;justify-content: center; }}
+        @media only screen and (max-width: 677px) {.max2 { justify-content: center; }}
+        @media only screen and (min-width: 677px) {.max2 { justify-content: space-between; align-items: center; }}
+        @media only screen and (max-width: 677px) {.max3 { width: 100%; }}
+        @media only screen and (max-width: 617px) {.max4 {display: none; }}
+
+        .tasto:hover{ /* questa e la condizione di questo css: se coperto con il cursore*/
+                        border: 5px solid #ff9900; /* Definisci la bordatura con lo spessore e il colore */
+                        background-color: rgb(53, 88, 42); /* Colore di sfondo quando si passa sopra */}
+
+        .ico:hover{ /* questa e la condizione di questo css: se coperto con il cursore*/
+                        border: 5px solid #ff9900; /* Definisci la bordatura con lo spessore e il colore */
+                        background-color: rgb(53, 88, 42); /* Colore di sfondo quando si passa sopra */}
+        .tasti{
+                        padding: 3% 0%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content:center}
+
+        .tasto {
+                        color: white;
+                        background-color: rgb(114, 226, 1);
+                        border: 2px solid rgb(255, 227, 195);
+                        border-top: solid rgb(255, 255, 255);
+                        border-left: solid rgb(255, 255, 255);
+                        border-radius: 10px;
+                        font-size: clamp(19px, 1.1vw, 40px);       /* (MIN_FONT_SIZE, CURRENT_FONT_SIZE, MAX_FONT_SIZE) */
+                        text-align: center;
+                        box-shadow: 5px 5px rgb(231, 231, 231);
+  
+                        margin: 1%;
+                        flex-grow: 0.2;            /*mettere dimensione casella */
+                        flex-basis: 100px;}
+        .ico {
+                        color: white;
+                        background-color: rgb(114, 226, 1);
+                        border: 2px solid rgb(255, 227, 195);
+                        border-top: solid rgb(255, 255, 255);
+                        border-left: solid rgb(255, 255, 255);
+                        border-radius: 10px;
+                        box-shadow: 5px 5px rgb(231, 231, 231);
+                        text-align: center; 
+                        margin: 1%;
+                        height: clamp(36px, 2.4vw, 42px); 
+                        flex-grow: 0.2;            /*mettere dimensione casella */
+                        flex-basis: 100px;}
+
+    </style>
+        <!--Html-->
+    <div class="max max2 max3" style="display: flex; flex-direction: row; background-color: white; border-radius: 10px; max-width: 100vw;box-shadow: 7px 7px rgb(231, 231, 231) ;">
+
+        <!--Logo+scritta-->
+        <div style="display: flex; flex-direction: row; padding: 5px; align-items: center;">
+            <!--Logo-->  
+            <div >
+                <img style="max-height: 80px; border-radius: 10px; margin: 10px; box-shadow: 5px 4px rgb(197, 197, 197);" src="immagini/326493861_1053477342415913_2168313587370598793_n.jpg" alt="logo">
+            </div>
+
+            <!--scritta-->
+            <div style="margin: 5px 10px;" class="max4">
+                <h1  style="font-family: 'Lobster'; color: #595959; font-size: 2vw;">L'Orto di Fede</h1>
+            </div>
+        </div>
+
+        <!--Bottoni-->  
+        <div style=" padding: 5px; display: flex; align-items: center;">
+            <div class="tasti" style=" display: flex; align-items: center; margin: 0; width: 70vw;">
+
+                <div class="tasto" onclick="window.location.href = 'prodotti.html';">
+                    <div style="font-family: Comfortaa; padding: 1vh 2vw;">Prodotti</div>
+                </div>
+
+                <div class="tasto" onclick="window.location.href = 'social.html';">
+                    <div style="font-family: Comfortaa; padding: 1vh 2vw;">Social</div>
+                </div>
+
+                <div class="tasto" onclick="window.location.href = 'info.html';">
+                    <div style="font-family: Comfortaa; padding: 1vh 2vw;">Info</div>
+                </div>
+
+                <div class="ico" onclick="window.location.href = 'home.html';">
+                    <div style="font-family: Comfortaa;">
+                        <img src="immagini/download-removebg-preview_2.png" style="height: clamp(30px, 5vw, 39px);  filter: brightness(1.2);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--storia-->
+    <div class="contenitore">
+
+        <!--condizioni-->   
+        <style>
+                @media only screen and (max-width: 466px) {.ordine {order: 1;}}    /* quando + piccolo di 466 */
+                @media only screen and (min-width: 466px) {.ordine {order: 3;}}    /* quando + grande di 466 */
+        </style>
+
+        <!--destra-->
+        <div style="flex-grow: 1; flex-basis: 100px;order: 2;">
+    
+                <!--imgagine-->
+                <div class="div2">
+
+                    <style> 
+                        @media only screen and (min-width: 1390px) {.img-storia {display: none; }}
+                        @media only screen and (max-width: 566px) {.img-storia {display: none; }}
+                    </style>
+
+                    <div class="div">
+                        <img src="immagini_storia/122022480_3620058221366092_6192237183249931555_n.png" class="img">
+                    </div>
+    
+                    <div class="div">
+                        <img src="immagini_storia/30730020_1779917458713520_6334589561984778240_n.png"  class="img">
+                    </div>
+
+                    <div class="div">
+                        <img src="immagini_storia/383236152_18384170755041387_5064779106098565214_n.png"  class="img">
+                    </div>
+
+                    <div class="div img-storia">
+                        <img src="immagini_storia/398859_377069815664965_620660968_n.png"  class="img">
+                    </div>
+
+                    <div class="div img-storia">
+                        <img src="immagini_storia/Cropped_Image_14.png"  class="img">
+                    </div>
+    
+                </div>
+
+
+        
+        </div>
+    
+        <!--centro-->
+        <div class="ordine " style="flex-grow: 4; flex-basis: 350px; max-width: 900px; margin: 2% 0%;">
+                
+                <div class="centrato" style="height: 100%; padding-bottom: 20px;" >
+                <div class="titolo">
+                    <div style="font-family:'Lobster';">La Nostra Storia</div>
+                </div>
+    
+                <div style="height: 100%;">
+                    <p style="background-color: white; font-family:Comfortaa; text-align: center; padding: 3%; border-radius: 30px;height: 95%; " >
+                        La nostra Storia:
+                        Azienda agricola di Variano di Basiliano in provincia di Udine nasce nel 2002 grazie alla passione del suo creatore Federico Lora, trasferitosi da Montagnana in provincia di PD, dove già collaborava nell'Azienda agricola convenzionale di famiglia, per amore .<br><br>
+                        Inizia la sua attività in Friuli con produzioni intensive di fragole fuori suolo e meloni per mercati e grande distribuzione. Ma dopo alcuni anni di duri sacrifici e di scarsi guadagni capisce che alle grosse quantità prodotte non corrispondevano entrate sufficienti, a causa di un mercato falsato, fatto di intermediari e grande distribuzione che considerano il produttore e il consumatore finale gli
+                        anelli deboli del sistema.
+                        Così decise di creare un orto.<br><br>
+                        Si ricordò della madre che dietro casa coltivava il necessario per la famiglia, nacque una vera passione, fatta di ricerca e di tentativi che portò l'azienda a quella che è oggi. Un'azienda "naturale " che utilizza tutti i sistemi che la natura ha per difendersi da parassiti e malattie delle piante. Quindi insetti utili, funghi antagonisti, micorrize, olio di neem, pompelmo, alghe marine, fertilizzanti di origine vegetale, bio fumiganti, rotazione dei cicli culturali, sovescio, ecc...
+                        Una delle caratteristiche principali e' la biodiversità, ovvero la ricerca continua di varietà di ortaggi anche antichi, ormai desueti, riportati a nuova vita per farli conoscere alle nuove generazioni, mantenendo un'elevata qualità a scapito di una ridotta produttività.
+                        <br><br>Appassionato di viaggi intorno al mondo è diventato un divertimento ricercare sapori di altri paesi per sperimentare nuove colture sconosciute al mercato italiano (gombo, melone amaro, Pak choi, mizuna, daikon, zucca hokkaido, batata, anguria gialla e africana, ecc...) o culture di altre regioni, (cavolo nero, cavolo riccio, cocummelle, tromboncino d’albenga, anellino di Trento, ecc…). Prodotti antichi (30 tipi di pomodori, 10 varietà di zucchine, di melanzane o peperoni) o prodotti locali ormai desueti (la zucchina friulana, la patata rossa carnica e i fagiolini viola).
+                        Anche il metodo di commercializzazione e' originale, ogni giorno per lo spaccio aziendale e per i mercatini rionali viene raccolto il prodotto che non viene conservato in cella frigo prima della messa in vendita e arriva freschissimo sulle tavole dei nostri clienti,
+                        Tutti i prodotti sono divisi in due sole fasce di prezzo, per ogni fascia una  borsa.<br><br> Si semplifica così la vendita educando i clienti a servirsi da soli con i propri contenitori e con una notevole riduzione di imballaggi plastici e un ridotto impatto ambientale .
+                        
+                    </p>
+                </div>
+                </div>
+               
+    
+    
+        </div>
+
+        <!--sinistra-->
+        <div style="flex-grow: 1; flex-basis: 100px; order: 4;">
+    
+    
+                <!--imgagine-->
+                <div class="div2">
+
+                    <div class="div">
+                        <img src="immagini_storia/408031309_760675566099537_2526123556505846281_n.png"  class="img">
+                    </div>
+    
+                    <div class="div">
+                        <img src="immagini_storia/407044894_760675702766190_3115240845830622781_n.png"  class="img">
+                    </div>
+
+                    <div class="div">
+                        <img src="immagini_storia/441445502_18428633065041387_1423311450627631094_n.png"  class="img">
+                    </div>
+    
+                    <div class="div img-storia">
+                        <img src="immagini_storia/Cs4u5h8WcAUQXiX.png"  class="img">
+                    </div>
+
+                    <div class="div img-storia">
+                        <img src="immagini_storia/fede.png"  class="img">
+                    </div>
+
+                    <div class="div img-storia">
+                        <img src="immagini_storia/orto.png"  class="img">
+                    </div>
+
+                </div>
+    
+    
+    
+        </div>
+
+
+    </div>
+    
+
+</body>
+</html>

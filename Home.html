@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lorto di Fede</title>
+
+    <!--Link per altri file: Css/Img-->
+    <link rel="shortcut icon" href="immagini/lortodifede4-removebg-preview.png" >
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="disordinato.css">
+    <link rel="stylesheet" href="Home.js">
+    <link rel="stylesheet" href="storia.html">
+    <link rel="stylesheet" href="prodotti.html">
+    <link rel="stylesheet" href="social.html">
+    <link rel="stylesheet" href="info.html">
+    
+    <!--Link per font scritta-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!--Condizioni-->
+    <style>
+        @media only screen and (min-width: 888px) { .img-tell {display: none; }}      /*prima dimensione testo*/
+
+
+        /*slide foto*/
+        * {box-sizing: border-box;}
+        body {font-family: Verdana, sans-serif;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        .slideshow-container {
+         max-width: 1000px;
+         position: relative;
+          margin: auto;}
+
+        .text {
+         color: #f2f2f2;
+         font-size: 15px;
+         padding: 8px 12px;
+         position: absolute;
+         bottom: 8px;
+         width: 100%;
+         text-align: center;}
+
+        .numbertext {
+         color: #f2f2f2;
+         font-size: 12px;
+         padding: 8px 12px;
+         position: absolute;
+         top: 0;}
+
+        .dot {
+         height: 15px;
+         width: 15px;
+         margin: 0 2px;
+        background-color: #bbb;
+         border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;}
+       
+        .active {
+        background-color: #717171; }
+        
+        .fade {
+         animation-name: fade;
+        animation-duration: 1.5s;}
+        @keyframes fade {
+         from {opacity: .4} 
+         to {opacity: 1}}
+        @media only screen and (max-width: 300px) {
+        
+            .text {font-size: 11px}}
+
+</style>
+
+
+    
+
+
+
+</head>
+<body style="background-color: #247a07ff;">
+    
+  <!--Navbar-->   
+    <div class="navbar">
+        <div><!--Logo-->  
+            <img src="immagini/326493861_1053477342415913_2168313587370598793_n.jpg" alt="logo">
+        </div>
+        <div><!--scritta-->  
+            <h1 style="font-family:'Lobster'; height:100%;">L'Orto di Fede</h1>
+        </div>
+     <div><!--3 sbarette-->  
+         <img src="immagini/3-line-Menu.png" alt="icona menu" style="max-height: 70px;">
+        </div>
+    </div>
+
+    <!--Barra di ricerca-->  
+    <div class="ricerca" style="margin-top: 10px; ;">
+        <form class="modulo-ricerca" >
+
+            <input id="search" type="text" placeholder=" Cerca Data..." required>
+            <input id="submit" type="submit" value="🔍">
+    
+        </form>
+    </div>
+
+    <!--Bottoni-->  
+    <div class="tasti" style="margin: 0% 15% 0% 15%;">
+
+        <div class="tasto"  onclick="window.location.href = 'storia.html';">
+            <div style="font-family:Comfortaa; padding: 1vh 2vw;">Storia</div>
+        </div>
+
+        <div class="tasto"  onclick="window.location.href = 'prodotti.html';">
+            <div style="font-family:Comfortaa;padding: 1vh 2vw;;" >Prodotti</div>
+        </div>
+
+        <div class="tasto"  onclick="window.location.href = 'social.html';">
+            <div style="font-family:Comfortaa;padding: 1vh 2vw;;" >Social</div>
+        </div>
+
+        <div class="tasto"  onclick="window.location.href = 'info.html';">
+            <div style="font-family:Comfortaa;padding: 1vh 2vw;;">Info</div>
+        </div>
+       
+    </div>
+
+    <!--Slide Img-->
+    <div style="padding: 2%; background-color: darkgreen; border-radius: 10px;">
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="immagini/Te8EdJg0Rq6G9opZSVliXQ.png" alt="immagine 1" style="width:100%;border: 5px solid #003303;; border-radius: 15px;">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="immagini/B7HnhSOsQHeHSe5NlSeIew.png" style="width:100%;border: 5px solid #003303;; border-radius: 15px;">
+      <div class="text" style="font-family:'Lobster';background-color: #003303;">Frutto di lavoro</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="immagini/CzG8PfgxQwq5wank84keDA.png" style="width:100%;border: 5px solid #003303;; border-radius: 15px;">
+      <div class="text" style="font-family:'Lobster';background-color: #003303">Tanta scelta</div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+    </script>
+    </div>  
+
+    <!--Immagine dal telefono-->
+
+    <div class="img-tell" style="height: 100%; padding-top: 4%;">
+      <img src="immagini/contadino.png" alt="contadino fine pagina" style="width: 100%;  border: 4px rgb(9, 46, 0) solid; border-radius: 500px;">
+    </div>
+    
+
+
+</body>
+</html>
